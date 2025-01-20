@@ -1,0 +1,217 @@
+.espacios-universitarios-titulo {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.espacios-universitarios-titulo h3 {
+    font-size: 1.85rem !important;
+    padding: 10px !important;
+    background-color: #477551 !important;
+    color: #fff !important;
+    font-size: 1.85rem !important;
+}
+
+.espacios-universitarios-titulo a {
+    color: #3700ff !important;
+}
+
+.pdf-content {
+    padding-bottom: 3rem;
+}
+
+.card img {
+    width: 395px;
+    height: 263.3px;
+}
+
+.container_p {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1320px;
+}
+
+.titulo_sub {
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+
+}
+
+.titulo_p h3 {
+    font-size: 1.85rem !important;
+    padding: 10px !important;
+    background-color: #477551 !important;
+    color: #fff !important;
+    font-size: 1.85rem !important;
+}
+
+.titulo_p {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.sub_p {
+    /* background-color: black; */
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.sppb-row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.sppb-col-md-4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.sppb-column {
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.sppb-column-addons {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.sppb-addon-wrapper {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+
+
+#section-id-1539093608977 {
+    background-color: #e3e3e3;
+}
+
+.sppb-row-container {
+    max-width: 1320px;
+}
+
+
+
+#sp-bottom {
+    background-image: url("https://www.uaemex.mx/images/2024/Footer/uaem-dtic-6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+
+}
+
+.prepas-card {
+    text-align: center;
+
+}
+
+.prepas-card a {
+    color: #0345bf;
+}
+
+.prepas-card img {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.menu2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+.directorio {
+    padding-bottom: 2rem;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.directorio a {
+    color: #0345bf;
+}
+
+.column a {
+    color: #0345bf;
+}
+
+#dir {
+    background-color: #c3c3c3;
+}
+
+.direccion {
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    color: #ffffff;
+    border-radius: 0px;
+}
+
+.direccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#dir {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 160px;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.column {
+    flex: 1;
+    max-width: 30%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.column p {
+    margin: 0;
+    padding: 10px;
+}
+
+.card-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+}
+
+.card {
+    width: 30% !important;
+    margin-right: 20px !important;
+    text-align: left !important;
+}
