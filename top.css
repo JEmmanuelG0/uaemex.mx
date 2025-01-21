@@ -525,5 +525,11 @@ body.ltr #offcanvas-toggler.offcanvas-toggler-right {
 .sp-megamenu-parent > li.active > .sp-dropdown {
     display: block;
 }
-
+.sp-menu-item a{
+    text-decoration: none;
+}
+.sp-menu-item > a:hover {
+    color: #154d23 !important;  /* Cambia el color de la letra */
+    border-bottom: #958419 solid 1px !important; /* Cambia el color de la línea debajo */
+}
 

@@ -470,22 +470,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var submenuItems = document.querySelectorAll('.sp-megamenu-parent > li > span');
-            submenuItems.forEach(function(item) {
-                item.addEventListener('mouseover', function(event) {
-                    var parent = this.parentElement;
-                    parent.classList.add('active');
-                });
-
-                item.addEventListener('mouseout', function(event) {
-                    var parent = this.parentElement;
-                    parent.classList.remove('active');
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var submenuItems = document.querySelectorAll('.sp-megamenu-parent > li > span');
+        
+                submenuItems.forEach(function(item) {
+                    item.addEventListener('mouseover', function(event) {
+                        var parent = this.parentElement;
+                        parent.classList.add('active');
+                    });
+        
+                    item.parentElement.addEventListener('mouseover', function() {
+                        var parent = this;
+                        parent.classList.add('active');
+                    });
+        
+                    item.parentElement.addEventListener('mouseout', function(event) {
+                        var parent = this;
+                        // Verifica si el ratón aún está sobre el submenu o el item
+                        if (!parent.contains(event.relatedTarget)) {
+                            parent.classList.remove('active');
+                        }
+                    });
                 });
             });
-        });
-    </script>
+        </script>
+
 
 </body>
 
