@@ -1,0 +1,79 @@
+body.ltr.offcanvs-position-right .body-wrapper {
+    right: 0;
+}
+
+.body-wrapper {
+    position: relative;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    backface-visibility: hidden;
+}
+.body-innerwrapper {
+    overflow-x: hidden;
+}
+#sp-top-bar {
+    /* height: 50px !important; */
+    background-image: url(https://www.uaemex.mx/images/2021/pleca-arriba.jpg) !important;
+    /* background-attachment: fixed !important; */
+    background-image: no-repeat;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0px !important;
+}
+#sp-top-bar {
+    font-size: 1.5rem !important;
+}
+#sp-top-bar {
+    background: #3fc025;
+    color: #aaaaaa;
+}
+#sp-top-bar {
+    padding: 8px 0;
+    font-size: 0.875rem;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+.div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1320px;
+    }
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex
+;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+@media (min-width: 992px) {
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+
+
