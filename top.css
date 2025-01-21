@@ -1,9 +1,8 @@
 body.ltr.offcanvs-position-right .body-wrapper {
     right: 0;
 }
-
-#sp-top-bar a{
-    text-decoration: none;
+a{
+    text-decoration: none !important;
 }
 
 .body-wrapper {
@@ -526,100 +525,5 @@ body.ltr #offcanvas-toggler.offcanvas-toggler-right {
 .sp-megamenu-parent > li.active > .sp-dropdown {
     display: block;
 }
-.sp-menu-item a{
-    text-decoration: none;
-}
-.sp-menu-item > a:hover {
-    color: #154d23 !important;  /* Cambia el color de la letra */
-    border-bottom: #958419 solid 1px !important; /* Cambia el color de la línea debajo */
-}
 
-/* Estilos para el icono de hamburguesa */
-.burger-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25px;
-    height: 20px;
-}
 
-.burger-icon span {
-    background-color: #000;
-    height: 4px;
-    width: 100%;
-    border-radius: 2px;
-}
-
-/* Estilos del Offcanvas */
-.offcanvas-menu {
-    position: fixed;
-    top: 0;
-    right: -250px; /* Inicialmente fuera de la pantalla */
-    width: 250px;
-    height: 100%;
-    background-color: #333;
-    color: #fff;
-    transition: right 0.3s ease-in-out;
-    padding: 20px;
-    display: none; /* Ocultamos el menú por defecto */
-}
-
-.offcanvas-menu.open {
-    right: 0; /* El menú se mueve hacia la izquierda */
-    display: block; /* Ahora se muestra cuando tiene la clase 'open' */
-}
-
-.offcanvas-menu .offcanvas-header {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.close-btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 30px;
-}
-
-.offcanvas-menu .menu-list {
-    list-style: none;
-    padding: 0;
-}
-
-.offcanvas-menu .menu-list li {
-    margin: 20px 0;
-}
-
-.offcanvas-menu .menu-list li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-}
-
-/* Media query para pantallas menores a 700px */
-@media (max-width: 700px) {
-    .burger-icon {
-        display: block; /* Mostrar el botón de hamburguesa solo en pantallas pequeñas */
-    }
-
-    /* Asegúrate de que el menú no sea visible hasta que se abra */
-    #offcanvas-menu {
-        display: none; /* El menú está oculto por defecto */
-    }
-
-    /* Mostrar el menú offcanvas cuando tenga la clase 'open' */
-    .offcanvas-menu.open {
-        display: block;
-    }
-}
-
-/* Asegúrate de ocultar el menú en pantallas grandes */
-@media (min-width: 701px) {
-    .burger-icon {
-        display: none; /* Ocultar el menú hamburguesa */
-    }
-    #offcanvas-menu {
-        display: block; /* El menú estará visible en pantallas grandes */
-    }
-}
