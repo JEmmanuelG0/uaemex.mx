@@ -1,18 +1,18 @@
 // Menú de Oferta Educativa
 var submenuItems = document.querySelectorAll('.sp-megamenu-parent > li > span');
 
-submenuItems.forEach(function(item) {
-    item.addEventListener('mouseover', function(event) {
+submenuItems.forEach(function (item) {
+    item.addEventListener('mouseover', function (event) {
         var parent = this.parentElement;
         parent.classList.add('active');
     });
 
-    item.parentElement.addEventListener('mouseover', function() {
+    item.parentElement.addEventListener('mouseover', function () {
         var parent = this;
         parent.classList.add('active');
     });
 
-    item.parentElement.addEventListener('mouseout', function(event) {
+    item.parentElement.addEventListener('mouseout', function (event) {
         var parent = this;
         if (!parent.contains(event.relatedTarget)) {
             parent.classList.remove('active');
@@ -20,16 +20,16 @@ submenuItems.forEach(function(item) {
     });
 });
 
-document.addEventListener("scroll", function() {
+document.addEventListener("scroll", function () {
     const header = document.getElementById("header");
     if (window.scrollY > 35) {
         header.classList.add("scrolled");
     } else {
         header.classList.remove("scrolled");
     }
-  });
+});
 
-  document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     var submenuItems = document.querySelectorAll('.sp-megamenu-parent > li > span');
     var offcanvasToggler = document.querySelectorAll('.offcanvas-toggler-right');
     var offcanvasMenu = document.querySelector('.offcanvas-menu');
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
             e.preventDefault();
 
             // Alternar la clase active para mostrar el submenú
-            const submenu = item.nextElementSibling; // El <ul> con las clases .submenu
+            const submenu = item.nextElementSibling;
             const icon = item.querySelector("i"); // El ícono dentro del enlace
             if (submenu) {
                 submenu.style.display = submenu.style.display === "block" ? "none" : "block";
@@ -115,3 +115,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+function mostrarPDF(id) {
+    var contenedor = document.getElementById(id);
+    if (contenedor.style.display === "none" || contenedor.style.display === "") {
+        contenedor.style.display = "block";
+    } else {
+        contenedor.style.display = "none";
+    }
+}
