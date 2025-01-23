@@ -41,10 +41,9 @@ button {
     background-color: #a19766;
 }
 
-/* Para pantallas más grandes, mostramos el iframe del PDF */
 @media (min-width: 769px) {
     .pdf-container {
-        display: block; /* Mostramos el iframe del PDF */
+        display: block;
     }
 
     .div-item {
@@ -52,29 +51,27 @@ button {
         max-width: calc(33.33% - 20px);
     }
 
-    /* Aseguramos que las imágenes se muestren sin animación en pantallas grandes */
     .div-item img {
-        display: block; /* Asegura que la imagen sea visible */
-        width: 100%; /* Se ajusta al contenedor */
-        height: auto; /* Mantiene las proporciones */
+        display: block;
+        width: 400px;
+        height: auto;
     }
 
-    /* Eliminar efecto de flip en pantallas grandes */
+
     .div-item .flip-container {
-        display: block; /* El contenedor de flip sigue presente, pero sin animación */
+        display: block;
     }
 
     .div-item .flip {
         display: block;
-        transform: none; /* Sin animación */
+        transform: none;
     }
 
     .div-item .back {
-        display: none; /* No mostrar el reverso de la tarjeta */
+        display: none;
     }
 }
 
-/* Para pantallas medianas */
 @media (max-width: 1200px) {
     .contenedor-divs {
         padding-left: 150px;
@@ -89,13 +86,12 @@ button {
     }
 }
 
-/* Para pantallas pequeñas */
 @media (max-width: 768px) {
     .contenedor-divs {
         padding-left: 50px;
         padding-right: 50px;
         padding-bottom: 50px;
-        display: block; /* Cambié a bloque para evitar las imágenes encimadas */
+        display: block;
     }
 
     .div-item {
@@ -104,13 +100,11 @@ button {
         padding: 20%;
     }
 
-    /* Ajustar el tamaño de las imágenes para que no se encimen */
     .div-item img {
-        width: 80%; /* Se ajusta al contenedor */
-        height: auto; /* Mantiene las proporciones */
+        width: 80%;
+        height: auto;
     }
 
-    /* Ocultamos el botón y el PDF */
     .btn-container, .pdf-container {
         display: none;
     }
@@ -120,7 +114,6 @@ button {
     }
 
 
-    /* Para el flip en pantallas pequeñas */
     .div-item .flip-container {
         perspective: 1000px;
     }
@@ -132,12 +125,10 @@ button {
         transition: transform 0.6s;
     }
 
-    /* Efecto de flip al pasar el mouse */
     .div-item:hover .flip {
         transform: rotateY(180deg);
     }
 
-    /* Estilo del reverso */
     .div-item .flip .front,
     .div-item .flip .back {
         backface-visibility: hidden;
@@ -149,14 +140,12 @@ button {
         align-items: center;
     }
 
-    /* La parte frontal (imagen original) */
     .div-item .flip .front {
         background-color: transparent;
     }
 
-    /* La parte posterior (al pasar el mouse, fondo de color con enlace) */
     .div-item .flip .back {
-        background-color: #6b7c69; /* Fondo color */
+        background-color: #6b7c69;
         color: white;
         font-size: 16px;
         transform: rotateY(180deg);
@@ -167,17 +156,21 @@ button {
         color: white;
         font-size: 18px;
         padding: 10px 20px;
-        background-color: #333;
+        background-color: #6b7c69;
         border-radius: 5px;
         transition: background-color 0.3s ease;
+        padding: 30px 100px;
     }
 
-    .div-item .back a:hover {
-        background-color: #555;
+    .div-item .back2 a {
+        background-color: #c3c1c2 !important;
     }
 }
 
-/* Para pantallas muy pequeñas */
+.div-item .back3 a {
+    background-color: #a19766 !important;
+}
+
 @media (max-width: 480px) {
     .contenedor-divs {
         padding-left: 20px;
@@ -188,5 +181,15 @@ button {
 
     .div-item {
         font-size: 1.5rem;
+    }
+    .div-item .back a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        padding: 10px 20px;
+        background-color: #6b7c69;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        padding: 15px 20px;
     }
 }
