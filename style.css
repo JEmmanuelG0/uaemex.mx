@@ -408,10 +408,6 @@ ul ul {
         flex-direction: column !important;
         padding-top: 100px !important;
     }
-
-    .recuadro-info img {
-        width: 60% !important;
-    }
 }
 
 @media (max-width: 480px) {
